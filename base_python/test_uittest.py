@@ -53,5 +53,5 @@ if __name__ == '__main__':
     # suiteall = unittest.TestSuite([suite, suite1])
     # unittest.TextTestRunner().run(suiteall)
     #第四中执行方式：执行某个目录下的.py文件
-    discover = unittest.defaultTestLoader.discover("./", 'test_*.py')
+    discover = unittest.defaultTestLoader.discover("../", 'test_*.py')
     unittest.TextTestRunner().run(discover)

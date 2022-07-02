@@ -2,7 +2,7 @@ import pytest
 import yaml
 
 class TestDemo:
-    @pytest.mark.parametrize("env", yaml.safe_load(open("./env.yml")))
+    @pytest.mark.parametrize("env", yaml.safe_load(open("env.yml")))
     def test_demo(self, env):
         if "test" in env:
             print("this is test environment")
@@ -11,4 +11,4 @@ class TestDemo:
             print("this is dev environment")
 
     def test_yaml(self):
-        print(yaml.safe_load(open("./env.yml")))
+        print(yaml.safe_load(open("env.yml")))
